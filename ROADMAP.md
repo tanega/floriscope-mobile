@@ -65,11 +65,27 @@
 
 ## Fonctionnalités V2
 
+#### Portail de recherche
+
+* [ ] En tant que membre, je peux sélectionner/modifier la ressource (Plantes, Images, Collections) au sein de laquelle je souhaite effectuer ma recherche.
+
 ### Recherche de plantes
 
 * [ ] En tant que membre et lorsque je viens d’effectuer une recherche, je peux ajouter la plante à mes favoris.
 * [ ] En tant que membre et lorsque je viens d’effectuer une recherche, je peux ajouter la plante à une de mes collections.
-* [ ] En tant que membre, je peux également rechercher parmi les images et parmi les collections.
+
+### Recherche parmi les images
+
+* [ ] En tant que membre, je peux rechercher parmi les images publiques de la base.
+* [ ] En tant que membre, je peux filtrer les résultats de recherche pour les images selon les mots-clés, l'auteur, la(les) plante(s) photographiées
+* [ ] En tant que membre et lorsque je viens d'effectuer une recherche parmi les images, je peux consulter le détail d'une image
+
+### Recherche parmi les collections
+
+* [ ] En tant que membre, je peux rechercher parmi les collections publiques de plantes.
+* [ ] En tant que membre, je peux filtrer les résultats de recherche pour les collections de plantes selon leur catégorie, leurs mots-clés, leur auteur, les plantes présentes dans ces collections.
+* [ ] En tant que membre et lorsque j'ai effectué une recherche, je peux consulter le détail d'une collection de plante.
+* [ ] En tant que membre et lorsque j'ai effectué une recherche, je peux ajouter une collection de plantes à mes collections favorites.
 
 ### Fiche détail d’une plante
 
