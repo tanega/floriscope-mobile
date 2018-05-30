@@ -65,7 +65,7 @@
 
 ## Fonctionnalités V2
 
-#### Portail de recherche
+### Portail de recherche
 
 * [ ] En tant que membre, je peux sélectionner/modifier la ressource (Plantes, Images, Collections) au sein de laquelle je souhaite effectuer ma recherche.
 
