@@ -1,0 +1,25 @@
+platform :ios, '9.0'
+
+target 'Floriscope' do
+  rn_path = '../node_modules/react-native' # This path is likely to be `../node_modules/react-native` in your own project.
+  pod 'React', :path => rn_path, :subspecs => [
+    'Core',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', # Needed for debugging
+    'RCTAnimation', # Needed for FlatList and animations running on native UI thread
+    # Add any other subspecs you want to use in your project
+  ]
+  # Explicitly include Yoga if you are using RN >= 0.42.0
+  pod 'yoga', :path => "#{rn_path}/ReactCommon/yoga"
+
+  # Third party deps podspec link
+  pod 'DoubleConversion', :podspec => "#{rn_path}/third-party-podspecs/DoubleConversion.podspec"
+  pod 'glog', :podspec => "#{rn_path}/third-party-podspecs/glog.podspec"
+  pod 'Folly', :podspec => "#{rn_path}/third-party-podspecs/Folly.podspec"
+
+  pod 'ReactNativeFabric', :path => '../node_modules/react-native-fabric'
+
+end
