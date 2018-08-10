@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Jest Unit Tests
           command: |
-            yarn test -u
+            yarn test
 
       - persist_to_workspace:
           root: ~/floriscope-mobile

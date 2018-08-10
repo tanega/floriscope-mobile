@@ -17,6 +17,7 @@
 1. cd to the repo
 2. Run Build for either OS
   * for iOS
+    * install pods using `(cd ios && pod install)`
     * run `yarn ios`
   * for Android
     * Run Genymotion

@@ -1,14 +1,20 @@
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { ScrollView, Text, Image, View } from 'react-native'
+import { ScrollView, Text, Image, View, TouchableOpacity } from 'react-native'
 import { Images } from '../Themes'
 
 // Styles
 import styles from './Styles/LaunchScreenStyles'
 
-export default class LaunchScreen extends Component {
+class LaunchScreen extends Component {
+  static propTypes = {
+    goToSecondScreen: PropTypes.func.isRequired
+  }
+
   render () {
     return (
-      <View style={styles.mainContainer}>
+      <TouchableOpacity onPress={() => this.props.navigation.navigate('SecondScreen')} style={styles.mainContainer}>
         <Image
           source={Images.background}
           style={styles.backgroundImage}
@@ -27,7 +33,13 @@ export default class LaunchScreen extends Component {
           </View>
 
         </ScrollView>
-      </View>
+      </TouchableOpacity>
     )
   }
 }
+
+const mapDispatchToProps = dispatch => ({
+  goToSecondScreen: () => dispatch({ type: 'Navigation/BACK' })
+})
+
+export default connect(null, mapDispatchToProps)(LaunchScreen)
